@@ -1,0 +1,7 @@
+Here put your tools like :
+- Ant : http://ant.apache.org/
+- Maven : http://maven.apache.org/
+- IDE like Eclipse : http://www.eclipse.org/
+- JDK : http://www.oracle.com/technetwork/java/javase/downloads/index.html OR http://openjdk.java.net/
+
+Tip : We sometimes prefer separate tools in the projects, have no side effect during a migration, such as maven or JDK.

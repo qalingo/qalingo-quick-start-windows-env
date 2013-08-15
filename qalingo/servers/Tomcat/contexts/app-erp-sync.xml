@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context docBase="${project.path}/qalingo-webapp-applications/qalingo-webapp-app-erp-sync/target/app-erp-sync" path="/app-erp-sync" reloadable="true">
+
+</Context>

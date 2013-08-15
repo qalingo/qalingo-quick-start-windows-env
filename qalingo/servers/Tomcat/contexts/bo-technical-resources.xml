@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context docBase="${project.path}/qalingo-theme-assets/qalingo-assets-backoffice/qalingo-assets-technical-resources/target/bo-technical-resources/themes" path="/bo-technical-resources" reloadable="true">
+
+</Context>

@@ -1,0 +1,13 @@
+Here put your servers like :
+- MySQL (with a database "qalingo")
+- Apache
+- Tomcat
+- ActiveMQ (your JMS target)
+- Alfresco (your CMS target)
+- SOLR over Tomcat (your search target)
+
+Tips : 
+* We sometimes prefer separate Tomcat in the projects. Over Linux, you can keep one Tomcat and use link to create Virtual Tomcat whith specific configuration. Not easy on windows.
+* We name the folder for each Tomcat server like this, example "server-apache-tomcat-7.0.22-frontoffice-mcommerce" with a port 18 in Bat file
+change your server.xml like example in qalingo/servers/Tomcat/conf to user a ${port.prefix} value send by a -Dport.prefix in Bat file.
+add the context you want, in conf/Catalina/localhost, here for mcommerce, we need fo-mcommerce.xml and fo-mcommerce-resources.xml

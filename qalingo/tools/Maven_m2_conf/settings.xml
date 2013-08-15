@@ -1,0 +1,116 @@
+<settings>
+ 
+	<servers>
+	</servers>
+
+	<mirrors>
+		<mirror>
+			<id>hoteia-all</id>
+			<name>Hoteia.com</name>
+			<mirrorOf>central,apache, google code, jahia.org, java.net, springsource</mirrorOf>
+			<url>http://nexus.hoteia.com/content/groups/public</url>
+		</mirror>
+	</mirrors>
+
+	<profiles>
+		<profile>
+			<id>dev-qalingo</id>
+			<properties>
+				<project.www.theme>default</project.www.theme>
+				<spring.security.context.relative>true</spring.security.context.relative>
+				<packaging.excludes />
+
+				<jdbc.username>qalingo</jdbc.username>
+				<jdbc.password>password</jdbc.password>
+				<jdbc.url>jdbc:mysql://localhost:3306/qalingo?AutoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8</jdbc.url>
+
+				<batch.jdbc.username>qalingo</batch.jdbc.username>
+				<batch.jdbc.password>password</batch.jdbc.password>
+				<batch.jdbc.url>jdbc:mysql://localhost:3306/qalingo?AutoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8</batch.jdbc.url>
+				
+				<notification.velocity.email.templates.path>C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-web-classic-fo-bo/qalingo-theme-assets/qalingo-assets-frontoffice/qalingo-assets-mcommerce-pages/target/fo-mcommerce-pages/velocity/themes</notification.velocity.email.templates.path>
+				<bo.technical.velocity.www.pages.path>C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-web-classic-fo-bo/qalingo-theme-assets/qalingo-assets-backoffice/qalingo-assets-technical-pages/target/bo-technical-pages/velocity/themes</bo.technical.velocity.www.pages.path>
+				<bo.business.velocity.www.pages.path>C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-web-classic-fo-bo/qalingo-theme-assets/qalingo-assets-backoffice/qalingo-assets-business-pages/target/bo-business-pages/velocity/themes</bo.business.velocity.www.pages.path>
+				<bo.reporting.velocity.www.pages.path>C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-web-classic-fo-bo/qalingo-theme-assets/qalingo-assets-backoffice/qalingo-assets-reporting-pages/target/bo-reporting-pages/velocity/themes</bo.reporting.velocity.www.pages.path>
+				<fo.mcommerce.velocity.www.pages.path>C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-web-classic-fo-bo/qalingo-theme-assets/qalingo-assets-frontoffice/qalingo-assets-mcommerce-pages/target/fo-mcommerce-pages/velocity/themes</fo.mcommerce.velocity.www.pages.path>
+				<fo.prehome.velocity.www.pages.path>C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-web-classic-fo-bo/qalingo-theme-assets/qalingo-assets-frontoffice/qalingo-assets-prehome-pages/target/fo-prehome-pages/velocity/themes</fo.prehome.velocity.www.pages.path>
+				<fo.marketplace.velocity.www.pages.path>C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-web-ext-fo/qalingo-theme-ext-assets/qalingo-assets-ext-frontoffice/qalingo-assets-marketplace-pages/target/fo-marketplace-pages/velocity/themes</fo.marketplace.velocity.www.pages.path>
+				<fo.showroom.velocity.www.pages.path>C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-web-ext-fo/qalingo-theme-ext-assets/qalingo-assets-ext-frontoffice/qalingo-assets-showroom-pages/target/fo-showroom-pages/velocity/themes</fo.showroom.velocity.www.pages.path>
+				
+				<wurfl.xml.path>file:///C:/dev/hoteia/qalingo/workspace/misc/wurfl/wurfl.zip</wurfl.xml.path>
+
+				<!-- BATCH -->
+				<batch.jdbc.username>qalingo</batch.jdbc.username>
+				<batch.jdbc.password>password</batch.jdbc.password>
+				<batch.jdbc.url>jdbc:mysql://localhost:3306/qalingo?AutoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8</batch.jdbc.url>
+								
+                <batch.business.integration.cron>0 08 15 * * ?</batch.business.integration.cron>
+                <tomcat.context.url>http://localhost:13080/app-notification/</tomcat.context.url>
+				
+				<batch.email.alert.from>no-reply@mydomain.com</batch.email.alert.from>
+				<batch.email.alert.to>myname@mydomain.com</batch.email.alert.to>
+				<batch.email.alert.subject>Alert Batch</batch.email.alert.subject>
+
+				<project.www.theme>default</project.www.theme>
+				<spring.security.context.relative>true</spring.security.context.relative>
+				
+				<!-- SMTP -->
+				<conf.smtp.host>MY_SMTP_TBD</conf.smtp.host>
+				<conf.smtp.username>login_tbd</conf.smtp.username>
+				<conf.smtp.password>password_tbd</conf.smtp.password>
+				<conf.smtp.mail.smtp.host>MY_SMTP_TBD</conf.smtp.mail.smtp.host>
+				<conf.smtp.mail.smtp.port>587</conf.smtp.mail.smtp.port>
+								
+				<conf.smtp.mail.smtps.auth>true</conf.smtp.mail.smtps.auth>
+				<conf.smtp.mail.smtp.auth>true</conf.smtp.mail.smtp.auth>
+				<conf.smtp.mail.smtp.starttls.enable>true</conf.smtp.mail.smtp.starttls.enable>
+								
+				<conf.smtp.mail.smtp.debug>false</conf.smtp.mail.smtp.debug>
+				<conf.smtp.mail.debug>false</conf.smtp.mail.debug>
+				
+			</properties>
+		</profile>
+		<profile>
+			<id>nexus</id>
+			<repositories>
+				<repository>
+					<id>central</id>
+					<url>http://central</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+				<repository>
+					<id>hoteia-releases</id>
+					<url>http://nexus.hoteia.com/content/repositories/releases</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>central</id>
+					<url>http://central</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+
+	<activeProfiles>
+		<activeProfile>nexus</activeProfile>
+	</activeProfiles>
+
+</settings>

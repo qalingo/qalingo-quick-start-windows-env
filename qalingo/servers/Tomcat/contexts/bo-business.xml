@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context docBase="${project.path}/qalingo-webapp-backoffices/qalingo-webapp-bo-business/target/bo-business" path="/bo-business" reloadable="true">
+
+</Context>

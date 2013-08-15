@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context docBase="${project.path}/qalingo-webapp-frontoffices/qalingo-webapp-fo-prehome/target/fo-prehome" path="/fo-prehome" reloadable="true">
+
+</Context>
