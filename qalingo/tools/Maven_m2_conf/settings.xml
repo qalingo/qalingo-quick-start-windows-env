@@ -44,7 +44,15 @@
 				<batch.jdbc.password>password</batch.jdbc.password>
 				<batch.jdbc.url>jdbc:mysql://localhost:3306/qalingo?AutoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8</batch.jdbc.url>
 								
-                <batch.business.integration.cron>0 08 15 * * ?</batch.business.integration.cron>
+                <batch.cms.cron>0 08 15 * * ?</batch.cms.cron>
+                <batch.cms.commit.interval>200</batch.cms.commit.interval>
+                <batch.crm.cron>0 08 15 * * ?</batch.crm.cron>
+                <batch.crm.commit.interval>200</batch.crm.commit.interval>
+                <batch.erp.cron>0 08 15 * * ?</batch.erp.cron>
+                <batch.erp.commit.interval>200</batch.erp.commit.interval>
+                <batch.email.notification.cron>0 08 15 * * ?</batch.email.notification.cron>
+                <batch.email.notification.commit.interval>200</batch.email.notification.commit.interval>
+
                 <tomcat.context.url>http://localhost:13080/app-notification/</tomcat.context.url>
 				
 				<batch.email.alert.from>no-reply@mydomain.com</batch.email.alert.from>
