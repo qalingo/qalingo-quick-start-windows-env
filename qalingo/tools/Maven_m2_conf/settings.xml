@@ -50,7 +50,7 @@
                 <batch.crm.commit.interval>200</batch.crm.commit.interval>
                 <batch.erp.cron>0 0/1 * * * ?</batch.erp.cron>
                 <batch.erp.commit.interval>200</batch.erp.commit.interval>
-                <batch.email.notification.cron>0 0/1 * * * ?</batch.email.notification.cron>
+                <batch.email.cleaner.cron>0 0/10 * * * ?</batch.email.cleaner.cron>                <batch.email.notification.cron>0 0/1 * * * ?</batch.email.notification.cron>
                 <batch.email.notification.commit.interval>200</batch.email.notification.commit.interval>
 
                 <tomcat.context.url>http://localhost:13080/app-notification/</tomcat.context.url>
