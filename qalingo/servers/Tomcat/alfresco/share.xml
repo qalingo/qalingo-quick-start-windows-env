@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context docBase="${project.path}/share/target/share" path="/share" reloadable="true">
+
+</Context>
