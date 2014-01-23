@@ -20,6 +20,10 @@
 				<spring.security.context.relative>true</spring.security.context.relative>
 				<packaging.excludes />
 
+				<jdbc.url.root>jdbc:mysql://localhost:3306/</jdbc.url.root>
+				<jdbc.username.root>root</jdbc.username.root>
+				<jdbc.password.root>root</jdbc.password.root>
+
 				<jdbc.username>qalingo</jdbc.username>
 				<jdbc.password>password</jdbc.password>
 				<jdbc.url>jdbc:mysql://localhost:3306/qalingo?AutoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8</jdbc.url>
