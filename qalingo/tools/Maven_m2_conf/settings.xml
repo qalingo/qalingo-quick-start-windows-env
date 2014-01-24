@@ -20,6 +20,8 @@
 				<spring.security.context.relative>true</spring.security.context.relative>
 				<packaging.excludes />
 
+				<skip-setup-mysql>true</skip-setup-mysql>
+
 				<jdbc.url.root>jdbc:mysql://localhost:3306/</jdbc.url.root>
 				<jdbc.username.root>root</jdbc.username.root>
 				<jdbc.password.root>root</jdbc.password.root>
