@@ -21,7 +21,8 @@
 				<packaging.excludes />
 
 				<skip-setup-mysql>true</skip-setup-mysql>
-
+				<cache.configuration.location>file:/C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-engine/misc/qalingo-ehcache/standard/dev-ehcache.xml</cache.configuration.location>
+				
 				<jdbc.url.root>jdbc:mysql://localhost:3306/</jdbc.url.root>
 				<jdbc.username.root>root</jdbc.username.root>
 				<jdbc.password.root>root</jdbc.password.root>
