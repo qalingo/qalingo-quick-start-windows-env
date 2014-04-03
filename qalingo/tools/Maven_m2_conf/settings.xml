@@ -44,6 +44,9 @@
 				<fo.marketplace.velocity.www.pages.path>C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-web-ext-fo/qalingo-theme-ext-assets/qalingo-assets-ext-frontoffice/qalingo-assets-marketplace-pages/target/fo-marketplace-pages/velocity/themes</fo.marketplace.velocity.www.pages.path>
 				<fo.showroom.velocity.www.pages.path>C:/dev/hoteia/qalingo/workspace/git/qalingo-b2c-web-ext-fo/qalingo-theme-ext-assets/qalingo-assets-ext-frontoffice/qalingo-assets-showroom-pages/target/fo-showroom-pages/velocity/themes</fo.showroom.velocity.www.pages.path>
 				
+				<multipart.resolver.max.upload.size>100000</multipart.resolver.max.upload.size>
+				<multipart.resolver.upload.temp.dir>/datas/dev/hoteia/qalingo/workspace/upload/</multipart.resolver.upload.temp.dir>
+				
 				<wurfl.xml.path>file:///C:/dev/hoteia/qalingo/workspace/misc/wurfl/wurfl.zip</wurfl.xml.path>
 
 				<!-- BATCH -->
