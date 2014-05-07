@@ -1,0 +1,103 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.hoteia.qalingo</groupId>
+	<artifactId>qalingo-quick-start-windows-env</artifactId>
+	<version>0.7.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>qalingo-quick-start-windows-env</name>
+	<description>{Q} Commerce Solution Project</description>
+	<url>http://www.hoteia.com</url>
+	<inceptionYear>2012-2014</inceptionYear>
+	<organization>
+		<name>Hoteia</name>
+		<url>http://www.hoteia.com</url>
+	</organization>
+
+	<scm>
+		<connection>scm:git:git@github.com:qalingo/qalingo-quick-start-windows-env.git</connection>
+		<developerConnection>scm:git:git@github.com:qalingo/qalingo-quick-start-windows-env.git</developerConnection>
+		<url>scm:git:git@github.com:qalingo/qalingo-quick-start-windows-env.git</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<properties>
+		<root.basedir>${project.basedir}</root.basedir>
+	</properties>
+		
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.mycila.maven-license-plugin</groupId>
+				<artifactId>maven-license-plugin</artifactId>
+				<configuration>
+					<basedir>${basedir}</basedir>
+					<header>${root.basedir}/misc-license/license-qalingo.txt</header>
+					<quiet>false</quiet>
+					<failIfMissing>true</failIfMissing>
+					<aggregate>false</aggregate>
+					<includes>
+						<include>src/**</include>
+						<include>**/test/**</include>
+					</includes>
+					<excludes> 
+						<exclude>target/**</exclude>
+						<exclude>.clover/**</exclude>
+						<exclude>**/library/**</exclude>
+						<exclude>**/bootstrap/**</exclude>
+						<exclude>**/VAADIN/**</exclude>
+					</excludes>
+					<useDefaultExcludes>true</useDefaultExcludes>
+					<mapping>
+						<jwc>XML_STYLE</jwc>
+						<application>XML_STYLE</application>
+						<myFileExtension>JAVADOC_STYLE</myFileExtension>
+					</mapping>
+					<useDefaultMapping>true</useDefaultMapping>
+					<strictCheck>true</strictCheck>
+					<properties>
+						<year>${project.inceptionYear}</year>
+						<email>contact@hoteia.com</email>
+						<license.version>${releaseVersion}</license.version>
+					</properties>
+					<encoding>UTF-8</encoding>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>format</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>com.mycila.maven-license-plugin</groupId>
+					<artifactId>maven-license-plugin</artifactId>
+					<version>1.9.0</version>
+				</plugin>
+				<plugin>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.3.2</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Hoteia Releases</name>
+			<url>http://nexus.hoteia.com/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Hoteia Snapshots</name>
+			<url>http://nexus.hoteia.com/content/repositories/snapshots</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+	
+</project>
