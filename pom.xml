@@ -3,7 +3,7 @@
 
 	<groupId>org.hoteia.qalingo</groupId>
 	<artifactId>qalingo-quick-start-windows-env</artifactId>
-	<version>0.7.1-SNAPSHOT</version>
+	<version>0.8.0</version>
 	<packaging>pom</packaging>
 	<name>qalingo-quick-start-windows-env</name>
 	<description>{Q} Commerce Solution Project</description>
@@ -18,7 +18,7 @@
 		<connection>scm:git:git@github.com:qalingo/qalingo-quick-start-windows-env.git</connection>
 		<developerConnection>scm:git:git@github.com:qalingo/qalingo-quick-start-windows-env.git</developerConnection>
 		<url>scm:git:git@github.com:qalingo/qalingo-quick-start-windows-env.git</url>
-		<tag>HEAD</tag>
+		<tag>qalingo-quick-start-windows-env-0.8.0</tag>
 	</scm>
 
 	<properties>
