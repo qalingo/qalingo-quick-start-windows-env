@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context docBase="${project.path}/qalingo-webapp-remotes/qalingo-webapp-remote-rest-frontoffice/target/remote-rest-frontoffice" path="/remote-rest-frontoffice" reloadable="true">
+
+</Context>
